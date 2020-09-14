@@ -1,2 +1,31 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+
+using System;
+
+namespace SkapaMetoderÖvning2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MomsOchBelopp(100, 0.25, 100);
+            Moms(100, 0.25);
+            Addera(8, 10);
+
+
+            Console.ReadLine();
+        }
+        static void Addera(int a, int b)
+        {
+            Console.WriteLine("summa blir: " + (a + b));
+        }
+        static void Moms(double a, double b)
+        {
+            Console.WriteLine("handla för "+ a + " blir " + (a * b) + " kr moms");
+        }
+        static void MomsOchBelopp(double a, double b, double c)
+        {
+            Console.WriteLine("Summan  +  moms blir " + (a * b + c) + " kr");
+        }
+
+    }
+}
